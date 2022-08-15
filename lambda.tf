@@ -1,6 +1,6 @@
 data "archive_file" "zipit" {
   type        = "zip"
-  source_file = "./modules/run_updates/run_updates.py"
+  source_file = "${path.module}/run_updates/run_updates.py"
   output_path = "run_updates.zip"
 }
 
@@ -23,7 +23,7 @@ resource "aws_lambda_function" "updates_function" {
 }
 
 resource "aws_lambda_layer_version" "lambda_layer" {
-  filename   = "./modules/run_updates/lambda-layer.zip"
+  filename   = "${path.module}/run_updates/lambda-layer.zip"
   layer_name = "boto3"
 
   compatible_runtimes = ["python3.9"]
