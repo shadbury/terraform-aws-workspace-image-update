@@ -29,7 +29,7 @@ The state machine uses the following steps:
 - CountCheck - this will check the retry count, if the count excceed 10 then the function fails. The count is only used while there are workspaces in pending.
 
 ### State Machine.
-![Shadbury Step Function](images/step_function.png)
+![Shadbury Step Function](https://github.com/shadbury/terraform-aws-workspace-image-update/blob/v1.0.0/images/step_function.png)
 
 # How to deploy
 
@@ -74,7 +74,7 @@ An AWS account to create or administer a WorkSpace.
 The ability to download and access Amazon WorkSpaces from Windows, macOS, or Linux (Ubuntu) computers, Chromebooks, iPads, Fire tablets, Android tablets, and the Chrome and Firefox web browsers.
 
 
-![Shadbury Systems Manager](images/systems_manager.png)
+![Shadbury Systems Manager](https://github.com/shadbury/terraform-aws-workspace-image-update/blob/v1.0.0/images/systems_manager.png)
 
 
 ## Note
