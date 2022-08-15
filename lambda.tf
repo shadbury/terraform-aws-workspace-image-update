@@ -1,6 +1,6 @@
 data "archive_file" "zipit" {
   type        = "zip"
-  source_file = "./modules/run_updates/run_updates.py"
+  source_file = "${path.module}/run_updates/run_updates.py"
   output_path = "run_updates.zip"
 }
 
